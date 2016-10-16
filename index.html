@@ -96,7 +96,7 @@
           <ul class="nav navbar-nav">
             <li class="active"><a href="index.html">HOME</a></li>
             <li><a href="about.html">QUEM SOMOS</a></li>
-            <li><a href="contact.html">CONTATO</a></li>
+            <li><a href="#contato_panel">CONTATO</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">PAGES <b class="caret"></b></a>
               <ul class="dropdown-menu">
@@ -451,13 +451,13 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-6">
+				<div class="col-md-6" id="contato_panel">
 					<div class="contact-right wow fadeInLeft" data-wow-delay="0.4s">
 						<form id="contact_form">
 							<input name="name" type="text" class="text" value="Name..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name...';}">
 				 			<input name="email" type="text" class="text" value="Email..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email...';}">
 				 	 		<textarea name="message" value="Message:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message';}">Message..</textarea>
-							<input class="wow shake" data-wow-delay="0.3s" type="submit" value="Send Message" />
+							<input class="wow" data-wow-delay="0.3s" type="submit" value="Send Message" />
 						</form>
 					</div>
 				</div>
@@ -475,6 +475,22 @@
 						});
 						
 					});
+					
+					$(document).ready(function(){
+						$('a[href^="#"]').on('click',function (e) {
+							e.preventDefault();
+
+							var target = this.hash;
+							var $target = $(target);
+
+							$('html, body').stop().animate({
+								'scrollTop': $target.offset().top
+							}, 1200, 'swing', function () {
+								window.location.hash = target;
+							});
+						});
+					});
+					
 				</script>
 				<div class="clearfix"> </div>
 			</div>
@@ -497,6 +513,7 @@
 					});
 				</script>
 					<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+				<p></p>
 			</div>
 		</div>
 	</div>

@@ -690,13 +690,13 @@ a.leran-more:hover{
 	display:block;
 }
 .twitter{
-	background:url(../images/top-social-icons.png) no-repeat 0px 0px;
+	background:url(../assets/img/top-social-icons.png) no-repeat 0px 0px;
 }
 .facebook{
-	background: url(../images/top-social-icons.png) no-repeat -50px 0px;
+	background: url(../assets/img/top-social-icons.png) no-repeat -50px 0px;
 }
 .pin{
-	background: url(../images/top-social-icons.png) no-repeat -100px 0px;
+	background: url(../assets/img/top-social-icons.png) no-repeat -100px 0px;
 }
 .tm-head-grid ul{
 	margin:0;
@@ -782,7 +782,7 @@ a.leran-more:hover{
 	padding:0;
 }
 .contact-right-grid p span.c-msg{
-	background-position: 0px 6px;
+	background-position: 0px 3px;
 }
 .contact-right-grid p span.c-face{
 	background-position: 0px -61px;

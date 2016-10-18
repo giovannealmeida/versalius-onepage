@@ -1,13 +1,4 @@
-/*	################################################################
 
-	Author: Carlos Alvarez
-	URL: http://alvarez.is
-
-	Project Name: SOLID - Bootstrap 3 Theme
-	Version: 1.0
-	URL: http://alvarez.is
-
-################################################################# */
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,700,900);
 @import url(http://fonts.googleapis.com/css?family=Lato:400,900);
 @import url("prettyPhoto.css") screen;
@@ -204,134 +195,40 @@ a:focus {
 	SITE WRAPS
 ################################################################# */
 
-/*
 #headerwrap {
-	background-color: #00b3fe; /*old: #00b3fe*//*
-	min-height: 250px;
+	/*background-color: #00b3fe;*/
+	/*background-image: url(../img/banner-top.jpg);*/
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#384452+0,6d3a97+76,4f3893+100 */
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#384452+0,6d3a97+82,6d3a97+84,4f3893+100 */
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#384452+29,683093+81,303192+100 */
+	background: #384452; /* Old browsers */
+	background: -moz-linear-gradient(top,  #384452 29%, #683093 81%, #303192 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #384452 29%,#683093 81%,#303192 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #384452 29%,#683093 81%,#303192 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#384452', endColorstr='#303192',GradientType=0 ); /* IE6-9 */
+
+
+
+	/*min-height: 800px;*/
 	padding-top: 100px;
 	padding-bottom: 0px;
 	text-align: center;
-}*/
-
-/*
-#headerwrap {
-	background: url(../img/bannertop-versalius.jpg) no-repeat center top;
-	margin-top: 47px;
-	padding-top:0px;
-	text-align:center;
-	background-attachment: fixed;
-	background-position: center center;
-	min-height: 830px;
-	width: 100%;
-
-  -webkit-background-size: 100%;
-  -moz-background-size: 100%;
-  -o-background-size: 100%;
-  background-size: 100%;
-
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-*/
-/*
-#headerwrap {
-	background: url(../img/banner-top.jpg) no-repeat center top;
-	margin-top: 47px;
-	padding-top:0px;
-	text-align:center;
-	background-attachment: relative;
-	background-position: center center;
-	min-height: 830px;
-	width: 100%;
-
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
-
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-*/
-
-.responsive-image{
-    width: 100%;
-    background-size: 100% 100%;
 }
 
-
-@media screen and (min-width: 1600px){
-    .responsive-image{
-        background-image: url('../img/banner-top.jpg');
-				min-height: 830px;
-				margin-top: 47px;
-    }
+#headerwrap h3, h5 {
+	color: white;
+	font-weight: 400;
 }
 
-@media screen and (min-width: 1400px) and (max-width: 1600px){
-    .responsive-image{
-        background-image: url('../img/banner-top.jpg');
-				min-height: 500px;
-				margin-top: 56px;
-    }
+#headerwrap h1 {
+	color: white;
+	margin-bottom: 25px;
 }
 
-@media screen and (min-width: 1200px) and (max-width: 1400px){
-    .responsive-image{
-        background-image: url('../img/banner-top.jpg');
-				min-height: 480px;
-				margin-top: 56px;
-    }
+#headerwrap .img-responsive {
+	margin: 0 auto;
 }
 
-/* Retina display */
-@media screen and (min-width: 1024px) and (max-width: 1200px){
-    .responsive-image{
-        background-image: url('../img/banner-top.jpg');
-				min-height: 429px;
-				margin-top: 56px;
-    }
-}
-
-/* Desktop */
-@media screen and (min-width: 980px) and (max-width: 1024px){
-    .responsive-image{
-        background-image: url('../img/banner-top2.jpg');
-				min-height: 411px;
-				margin-top: 55px;
-    }
-}
-
-/* Tablet */
-@media screen and (min-width: 760px) and (max-width: 980px){
-    .responsive-image{
-        background-image: url('../img/banner-top3.jpg');
-				min-height: 300px;
-				margin-top: 60px;
-    }
-}
-
-
-/* Mobile HD */
-/*
-@media screen and (min-width: 350px) and (max-width: 760px){
-    .responsive-image{
-        background-image: url('../img/banner-top4.jpg');
-    }
-}
-*?
-/* Mobile LD */
-/*
-@media screen and (max-width: 350px){
-    .responsive-image{
-        background-image: url('../img/banner-top5.jpg');
-    }
-}
-*/
 /* Services Wrap */
 #service {
 	margin-top: 100px;
@@ -394,7 +291,7 @@ a:focus {
 
 /* Testimonials Wrap */
 #twrap {
-	background: url(assets/img/agency.jpg) no-repeat center top;
+	background: url(../img/t-back.jpg) no-repeat center top;
 	margin-top: 0px;
 	padding-top:60px;
 	text-align:center;
@@ -563,4 +460,26 @@ csmall2 {
 .share i {
 	padding-right: 15px;
 	font-size: 18px;
+}
+
+div.characters{
+	background-image: url(../img/bannertop-versalius.png);
+	background-position: center bottom;
+	background-size: 1300px;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	bottom: -1px;
+}
+
+div.effects{
+	background-image: url(../img/cloud.png), url(../img/stars.png);
+	background-position: bottom, center;
+	background-size: 800px, 100%;
+	background-repeat: repeat-x, repeat;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	bottom: -5px;
 }

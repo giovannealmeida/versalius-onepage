@@ -213,8 +213,31 @@ a:focus {
 	text-align: center;
 }*/
 
+/*
 #headerwrap {
 	background: url(../img/bannertop-versalius.jpg) no-repeat center top;
+	margin-top: 47px;
+	padding-top:0px;
+	text-align:center;
+	background-attachment: fixed;
+	background-position: center center;
+	min-height: 830px;
+	width: 100%;
+
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+*/
+/*
+#headerwrap {
+	background: url(../img/banner-top.jpg) no-repeat center top;
 	margin-top: 47px;
 	padding-top:0px;
 	text-align:center;
@@ -233,22 +256,82 @@ a:focus {
     -o-background-size: cover;
     background-size: cover;
 }
+*/
 
-#headerwrap h3, h5 {
-	color: white;
-	font-weight: 400;
-}
-
-#headerwrap h1 {
-	color: white;
-	margin-bottom: 25px;
-}
-
-#headerwrap .img-responsive {
-	margin: 0 auto;
+.responsive-image{
+    width: 100%;
+    background-size: 100% 100%;
 }
 
 
+@media screen and (min-width: 1600px){
+    .responsive-image{
+        background-image: url('../img/banner-top.jpg');
+				min-height: 830px;
+				margin-top: 47px;
+    }
+}
+
+@media screen and (min-width: 1400px) and (max-width: 1600px){
+    .responsive-image{
+        background-image: url('../img/banner-top.jpg');
+				min-height: 500px;
+				margin-top: 56px;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1400px){
+    .responsive-image{
+        background-image: url('../img/banner-top.jpg');
+				min-height: 480px;
+				margin-top: 56px;
+    }
+}
+
+/* Retina display */
+@media screen and (min-width: 1024px) and (max-width: 1200px){
+    .responsive-image{
+        background-image: url('../img/banner-top.jpg');
+				min-height: 429px;
+				margin-top: 56px;
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 980px) and (max-width: 1024px){
+    .responsive-image{
+        background-image: url('../img/banner-top2.jpg');
+				min-height: 411px;
+				margin-top: 55px;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 760px) and (max-width: 980px){
+    .responsive-image{
+        background-image: url('../img/banner-top3.jpg');
+				min-height: 300px;
+				margin-top: 60px;
+    }
+}
+
+
+/* Mobile HD */
+/*
+@media screen and (min-width: 350px) and (max-width: 760px){
+    .responsive-image{
+        background-image: url('../img/banner-top4.jpg');
+    }
+}
+*?
+/* Mobile LD */
+/*
+@media screen and (max-width: 350px){
+    .responsive-image{
+        background-image: url('../img/banner-top5.jpg');
+    }
+}
+*/
 /* Services Wrap */
 #service {
 	margin-top: 100px;

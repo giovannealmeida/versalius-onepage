@@ -250,7 +250,7 @@
                 </div>
                 <div class="tm-head-grid wow fadeInUp" data-wow-delay="0.4s">
                     <img src="assets/img/members/filipe.jpg" alt="">
-                    <h4>JFilipe Marques</h4>
+                    <h4>Filipe Marques</h4>
                     <h5>Diretor de Comunicação</h5>
                 </div>
                 <div class="clearfix"> </div>
@@ -302,13 +302,21 @@
                 <script type="text/javascript">
                     $('#contact_form').on('submit', function(e) {
                         e.preventDefault();
+                        if ($("#name").val() == ""
+                        || $("#email").val() == ""
+                        || $("#message").val() == "" ) {
+                            alert("Campos Vazios");
+                        }
+
                         $.post("email_form.php", {
                                 name: $("#name").val(),
                                 email: $("#email").val(),
-                                message: $("#message").val()
+                                message: $("#message").val(),
+                                action: "action"
                             },
                             function(data, status) {
-                                alert("Data: " + data + "\nStatus: " + status);
+                                alert("Email Enviado!");
+                                location.reload();
                             });
 
                     });

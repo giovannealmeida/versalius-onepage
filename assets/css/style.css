@@ -494,4 +494,5 @@ div.effects{
 	height: 100%;
 	position: absolute;
 	bottom: -5px;
+	z-index: 3;
 }

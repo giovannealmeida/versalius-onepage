@@ -323,6 +323,18 @@ a:focus {
 	line-height: 30px;
 }
 
+#twrap H3 {
+	color: white;
+	font-size: 20px;
+	line-height: 40px;
+}
+
+#twrap H4 {
+	color: white;
+	font-size: 15px;
+	line-height: 30px;
+}
+
 /* clients logo */
 #cwrap {
 	background: #f7f7f7;

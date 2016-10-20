@@ -27,6 +27,12 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="assets/img/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
+	<meta property="fb:app_id"          	content="1330791536954247" />
+	<meta property="og:url"                content="http://www.versalius.com.br/" />
+	<meta property="og:type"               content="website" />
+	<meta property="og:title"              content="Versalius" />
+	<meta property="og:description"        content="Desenvolva sistemas e aplicativos com a Versalius" />
+	<meta property="og:image"              content="http://www.versalius.com.br/assets/img/logo-versalius_panel.png" />
 
     <title>Versalius</title>
 
@@ -302,12 +308,6 @@
                 <script type="text/javascript">
                     $('#contact_form').on('submit', function(e) {
                         e.preventDefault();
-                        if ($("#name").val() == ""
-                        || $("#email").val() == ""
-                        || $("#message").val() == "" ) {
-                            alert("Campos Vazios");
-                        }
-
                         $.post("email_form.php", {
                                 name: $("#name").val(),
                                 email: $("#email").val(),
